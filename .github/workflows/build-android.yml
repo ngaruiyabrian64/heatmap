@@ -1,0 +1,44 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-android:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install MAUI Android workload
+        run: dotnet workload install maui-android
+
+      - name: Restore
+        run: dotnet restore ./LocationTrackerApp.csproj
+
+      - name: Publish Release APK
+        run: dotnet publish ./LocationTrackerApp.csproj -f net8.0-android -c Release -p:AndroidPackageFormats=apk -p:AndroidKeyStore=false
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LocationTrackerApp-apk
+          path: |
+            **/bin/Release/net8.0-android/**/*.apk
+          if-no-files-found: error

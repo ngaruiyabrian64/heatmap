@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LocationTrackerApp</name>
+    </assembly>
+    <members>
+        <member name="T:LocationTrackerApp.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:LocationTrackerApp.ViewModels.MainViewModel.StatusText">
+            <inheritdoc cref="F:LocationTrackerApp.ViewModels.MainViewModel._statusText"/>
+        </member>
+        <member name="P:LocationTrackerApp.ViewModels.MainViewModel.PointCount">
+            <inheritdoc cref="F:LocationTrackerApp.ViewModels.MainViewModel._pointCount"/>
+        </member>
+        <member name="P:LocationTrackerApp.ViewModels.MainViewModel.IsTracking">
+            <inheritdoc cref="F:LocationTrackerApp.ViewModels.MainViewModel._isTracking"/>
+        </member>
+        <member name="P:LocationTrackerApp.ViewModels.MainViewModel.CaptureIntervalSeconds">
+            <inheritdoc cref="F:LocationTrackerApp.ViewModels.MainViewModel._captureIntervalSeconds"/>
+        </member>
+        <member name="F:LocationTrackerApp.ViewModels.MainViewModel.startCommand">
+            <summary>The backing field for <see cref="P:LocationTrackerApp.ViewModels.MainViewModel.StartCommand"/>.</summary>
+        </member>
+        <member name="P:LocationTrackerApp.ViewModels.MainViewModel.StartCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LocationTrackerApp.ViewModels.MainViewModel.StartAsync"/>.</summary>
+        </member>
+        <member name="F:LocationTrackerApp.ViewModels.MainViewModel.stopCommand">
+            <summary>The backing field for <see cref="P:LocationTrackerApp.ViewModels.MainViewModel.StopCommand"/>.</summary>
+        </member>
+        <member name="P:LocationTrackerApp.ViewModels.MainViewModel.StopCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LocationTrackerApp.ViewModels.MainViewModel.StopAsync"/>.</summary>
+        </member>
+        <member name="F:LocationTrackerApp.ViewModels.MainViewModel.refreshCommand">
+            <summary>The backing field for <see cref="P:LocationTrackerApp.ViewModels.MainViewModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:LocationTrackerApp.ViewModels.MainViewModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LocationTrackerApp.ViewModels.MainViewModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="F:LocationTrackerApp.ViewModels.MainViewModel.clearCommand">
+            <summary>The backing field for <see cref="P:LocationTrackerApp.ViewModels.MainViewModel.ClearCommand"/>.</summary>
+        </member>
+        <member name="P:LocationTrackerApp.ViewModels.MainViewModel.ClearCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LocationTrackerApp.ViewModels.MainViewModel.ClearAsync"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StatusText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StatusText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PointCount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PointCount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsTracking">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsTracking" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CaptureIntervalSeconds">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CaptureIntervalSeconds" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StatusText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StatusText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PointCount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PointCount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsTracking">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsTracking" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CaptureIntervalSeconds">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CaptureIntervalSeconds" generated properties.</summary>
+        </member>
+    </members>
+</doc>
